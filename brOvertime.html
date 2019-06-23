@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bookNew</title>
+<style>
+	.a1{
+		width: 600px;
+		height: 460px;		
+	}
+	.a1 h3{
+		margin: 0px;
+		text-align: center;
+	}
+	.a3{
+	width: 310px;
+	height: 430px;
+	display: inline-block;
+	vertical-align: top;
+	border-right: solid;
+</style>
+</head>
+<script>
+	function showDetail(){
+		document.getElementById("detail").style.display="inline";
+	}
+	function warn(){
+		alert("通知成功！");
+	}
+</script>
+<body>
+<div class="a1">
+<h3>借还书管理--超时</h3>
+<div class="a3">
+<div style="border-bottom: solid">
+<p>点击下方按钮查询和提醒</p>
+<input type="button" value="查询超时信息" name="query" onClick="showDetail()">
+<input type="button" value="通知借书者" name="warn" onClick="warn()">
+</div>
+<div id="detail" style="display: none">
+	<table>
+		<tr>
+			<td>姓名：</td>
+			<td><input type="text" value="阿狸"></td>
+		</tr>
+		<tr>
+			<td>学号：</td>
+			<td><input type="text" value="2016070030444"></td>
+		</tr>
+		<tr>
+			<td>图书编号：</td>
+			<td><input type="text" value="JN-0537"></td>
+		</tr>
+		<tr>
+			<td>书名：</td>
+			<td><input type="text" value="计算机操作系统(第四版)"></td>
+		</tr>
+		<tr>
+			<td>超时时长：</td>
+			<td><input type="text" value="8天"></td>
+		</tr>
+		<tr>
+			<td colspan="2">--------------------------------------</td>
+		</tr>
+		<tr>
+			<td>姓名：</td>
+			<td><input type="text" value="桃子"></td>
+		</tr>
+		<tr>
+			<td>学号：</td>
+			<td><input type="text" value="20160700304333"></td>
+		</tr>
+		<tr>
+			<td>图书编号：</td>
+			<td><input type="text" value="JN-8888"></td>
+		</tr>
+		<tr>
+			<td>书名：</td>
+			<td><input type="text" value="数据库系统概论(第五版)"></td>
+		</tr>
+		<tr>
+			<td>超时时长：</td>
+			<td><input type="text" value="18天"></td>
+		</tr>
+	</table>
+</div>
+</div>
+</div>
+</body>
+</html>
