@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图书馆管理系统</title>
+<style>
+body{
+	width: 720px;
+	height: 480px;
+	border: solid black;
+	margin: 20px auto;
+}
+.a1{
+	width: 100px;
+	height: 480px;
+	border-right: solid black;
+	display: inline-block;
+}
+.a1 a{
+	display: block;
+	padding: 0px 20px;
+}
+.a2{
+	width: 612px;
+	height: 480px;
+	display: inline-block;
+	vertical-align: top;
+}
+</style>
+<script>
+	function change(s){
+		document.getElementById("if").src=s+".html";
+	}
+</script>
+</head>
+<body>
+	<div class="a1">
+		<a onClick="change('welcome')" href="#1" style="padding: 2px;">欢迎页</a>
+		<a style="padding: 2px;">图书管理</a>
+		<a onClick="change('bookNew')" href="#2">新增</a>
+		<a onClick="change('bookAdd')" href="#3">添加</a>
+		<a onClick="change('bookAlter')" href="#4">修改</a>
+		<a onClick="change('bookDelete')" href="#5">删除</a>
+		<a style="padding: 2px;">借还书管理</a>
+		<a onClick="change('brBorrow')" href="#6">借书</a>
+		<a onClick="change('brReturn')" href="#7">还书</a>
+		<a onClick="change('brRenew')" href="#8">续借</a>
+		<a onClick="change('brLose')" href="#9">丢失</a>
+		<a onClick="change('brOvertime')" href="#10">超时</a>
+		<a style="padding: 2px;">用户管理</a>
+		<a onClick="change('userAdd')" href="#11">注册</a>
+		<a onClick="change('userDelete')" href="#12">注销</a>
+		<a onClick="change('queryUser')" href="#13" style="padding: 2px;">查询用户</a>
+		<a onClick="change('queryBook')" href="#14" style="padding: 2px;">查询图书</a>
+	</div>
+	<div class="a2">
+		<iframe id="if" src="welcome.html"  frameborder="0" width="100%" height="100%"></iframe>
+	</div>
+</body>
+</html>

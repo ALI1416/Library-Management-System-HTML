@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>brLose</title>
+<style>
+	.a1{
+		width: 600px;
+		height: 460px;		
+/*		border: solid;*/
+	}
+	.a1 h3{
+		margin: 0px;
+		text-align: center;
+	}
+	.if{
+		width: 310px;
+		height: 430px;
+		display: inline-block;
+/*		border: solid;*/
+		border-right: solid;
+	}
+	.a2{
+		display: inline-block;
+		vertical-align: top;
+	}
+</style>
+</head>
+<script>
+	function ok(){
+		alert("已成功标记此书丢失！");
+	}
+</script>
+<body>
+<div class="a1">
+	<h3>借还书管理--丢失</h3>
+	<iframe class="if" src="brQueryHandle.html" frameborder="0"></iframe>
+	<div class="a2">
+		<p>请在左侧填写丢失信息</p>
+		<p>丢失点击下方“确定”按钮</p>
+		<input type="button" value="确定" onClick="ok()">
+	</div>
+</div>
+</body>
+</html>

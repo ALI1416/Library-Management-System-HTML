@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bookAlter</title>
+<style>
+	.a1{
+		width: 600px;
+		height: 460px;		
+/*		border: solid;*/
+	}
+	.a1 h3{
+		margin: 0px;
+		text-align: center;
+	}
+	.if{
+		width: 310px;
+		height: 430px;
+		display: inline-block;
+/*		border: solid;*/
+		border-right: solid;
+	}
+	.a2{
+		display: inline-block;
+		vertical-align: top;
+	}
+</style>
+</head>
+<script>
+	function ok(){
+		alert("修改成功！");
+	}
+</script>
+<body>
+<div class="a1">
+	<h3>图书管理--修改</h3>
+	<iframe class="if" src="bookQueryHandle.html" frameborder="0"></iframe>
+	<div class="a2">
+		<p>请在左侧直接修改</p>
+		<p>修改完成后点击下方“确定”按钮</p>
+		<input type="button" value="确定" onClick="ok()">
+	</div>
+</div>
+</body>
+</html>

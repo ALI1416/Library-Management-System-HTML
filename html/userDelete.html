@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bookDelete</title>
+<style>
+	.a1{
+		width: 600px;
+		height: 460px;		
+/*		border: solid;*/
+	}
+	.a1 h3{
+		margin: 0px;
+		text-align: center;
+	}
+	.if{
+		width: 310px;
+		height: 430px;
+		display: inline-block;
+/*		border: solid;*/
+		border-right: solid;
+	}
+	.a2{
+		display: inline-block;
+		vertical-align: top;
+	}
+</style>
+</head>
+<script>
+	function ok(){
+		alert("删除成功！");
+	}
+</script>
+<body>
+<div class="a1">
+	<h3>用户管理--注销</h3>
+	<iframe class="if" src="userQueryHandle.html" frameborder="0"></iframe>
+	<div class="a2">
+		<p>删除后不可恢复！</p>
+		<p>如果要删除请点击下方“确定”按钮</p>
+		<input type="button" value="确定" onClick="ok()">
+		<p id="showOk"></p>
+	</div>
+</div>
+</body>
+</html>

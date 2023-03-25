@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>queryBook</title>
+<style>
+	.a1{
+		width: 600px;
+		height: 460px;		
+/*		border: solid;*/
+	}
+	.a1 h3{
+		margin: 0px;
+		text-align: center;
+	}
+	.a3{
+	width: 310px;
+	height: 430px;
+	display: inline-block;
+	vertical-align: top;
+	border-right: solid;
+	}
+	.a4{
+	width: 270px;
+	height: 430px;
+/*	display: inline-block;*/
+	vertical-align: top;
+/*	border: solid black;*/
+	}
+</style>
+</head>
+<script>
+	function showDetail(){
+		document.getElementById("detail").style.display="inline-block";
+	}
+</script>
+<body>
+<div class="a1">
+<h3>查询图书</h3>
+<div class="a3">
+<form>
+<table>
+	<tr>
+		<td colspan="2">请输入查询选项(至少一个)</td>
+	</tr>
+		<tr>
+			<td>编号：</td>
+			<td><input type="text" value="JN-0537"></td>
+		</tr>
+		<tr>
+			<td>书名：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>作者：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>类别：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>加入时间：</td>
+			<td><input type="text" value="" placeholder="格式 2018-1-1"></td>
+		</tr>
+		<tr>
+			<td>存入数量：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>出版社：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+		<tr>
+			<td>出版日期：</td>
+			<td><input type="text" value="" placeholder="格式 2018-1"></td>
+		</tr>
+		<tr>
+			<td>条形码：</td>
+			<td><input type="text" value=""></td>
+		</tr>
+	<tr>
+		<td><input type="reset" value="重填"></td>
+		<td><input type="button" value="查询" name="query" onClick="showDetail()"></td>
+	</tr>
+</table>
+</form>
+</div>
+<div class="a4" id="detail" style="display: none">
+	<table>
+		<tr>
+			<td>编号：</td>
+			<td><input type="text" value="JN-0537"></td>
+		</tr>
+		<tr>
+			<td>书名：</td>
+			<td><input type="text" value="计算机操作系统(第四版)"></td>
+		</tr>
+		<tr>
+			<td>作者：</td>
+			<td><input type="text" value="汤小丹 梁红兵等"></td>
+		</tr>
+		<tr>
+			<td>类别：</td>
+			<td><input type="text" value="计算机"></td>
+		</tr>
+		<tr>
+			<td>加入时间：</td>
+			<td><input type="text" value="2018-12-2" placeholder="格式 2018-1-1 默认此时"></td>
+		</tr>
+		<tr>
+			<td>存入数量：</td>
+			<td><input type="text" value="1"></td>
+		</tr>
+		<tr>
+			<td>出版社：</td>
+			<td><input type="text" value="西安电子科技大学"></td>
+		</tr>
+		<tr>
+			<td>出版日期：</td>
+			<td><input type="text" value="2014-5" placeholder="格式 2018-1"></td>
+		</tr>
+		<tr>
+			<td>条形码：</td>
+			<td><input type="text" value="9787560633503"></td>
+		</tr>
+		<tr>
+			<td>目录：</td>
+			<td>
+				<textarea rows="5" cols="23">第一章：操作系统引论
+第二章：进程的描述与控制
+第三章：处理机调度与死锁</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>封面图片：</td>
+			<td>无</td>
+		</tr>
+		<tr>
+			<td>电子书：</td>
+			<td>无</td>
+		</tr>
+	</table>
+</div>
+</div>
+</body>
+</html>
